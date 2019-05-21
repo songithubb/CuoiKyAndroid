@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_themcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sản phẩm"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ff00"/>
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_themcv"
+        android:hint="ID"/>
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_id"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/edt_price"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_name"
+        android:hint="Price"/>
+    <EditText
+        android:id="@+id/edt_producer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_price"
+        android:hint="Producer"/>
+    <EditText
+        android:id="@+id/edt_descreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_producer"
+        android:hint="Descreption"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_descreption"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="Add"/>
+    <Button
+        android:layout_toRightOf="@+id/btn_add"
+        android:id="@+id/btn_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_descreption"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="Cancle"/>
+
+</RelativeLayout>
